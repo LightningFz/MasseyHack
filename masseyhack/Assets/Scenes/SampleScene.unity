@@ -1200,11 +1200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121384291803818087, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 2121384291803818087, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.64
+      value: -4.3000007
       objectReference: {fileID: 0}
     - target: {fileID: 2121384291803818087, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1257,6 +1257,26 @@ PrefabInstance:
     - target: {fileID: 5425455054006095542, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022865871521078778, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
+      propertyPath: m_ScreenY
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022865871521078778, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
+      propertyPath: m_DeadZoneWidth
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022865871521078778, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022865871521078778, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
+      propertyPath: m_DeadZoneHeight
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022865871521078778, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b769ec3dc8547584c8ba274f808948a2, type: 3}
