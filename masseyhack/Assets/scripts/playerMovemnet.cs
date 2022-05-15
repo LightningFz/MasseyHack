@@ -17,9 +17,11 @@ public class playerMovemnet : MonoBehaviour
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundObject;
+    public Animator animator;
 
     Rigidbody2D rb;
     BoxCollider2D coll;
+    Vector2 movement;
     private void Start()
     {
         jumpCount = maxJumps;
@@ -32,6 +34,8 @@ public class playerMovemnet : MonoBehaviour
     void Update()
     {
         getInput();
+        animator.SetFloat("horizontal", movement.x);
+        animator.SetFloat("speed", movement.magnitude);
     }
     private void FixedUpdate()
     {
@@ -49,7 +53,7 @@ public class playerMovemnet : MonoBehaviour
 
     private void getInput()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        movement.x = Input.GetAxisRaw("Horizontal");
         if (Input.GetButtonDown("Jump"))
         {
             _isJumping = true;
@@ -58,7 +62,7 @@ public class playerMovemnet : MonoBehaviour
     }
     private void move()
     {
-        rb.velocity = new Vector2(horizontal * runSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(movement.x * runSpeed, rb.velocity.y);
         if (_isJumping && jumpCount > 0)
         {
             rb.AddForce(new Vector2(0f, jumpPower));
