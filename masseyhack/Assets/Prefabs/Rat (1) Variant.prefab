@@ -33,7 +33,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6444527836781072642, guid: 19fbcfbd817d2864cb104b7aa7669822, type: 3}
       propertyPath: m_Name
-      value: Rat (3)
+      value: Rat (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444527836781072642, guid: 19fbcfbd817d2864cb104b7aa7669822, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6444527836781072646, guid: 19fbcfbd817d2864cb104b7aa7669822, type: 3}
       propertyPath: m_RootOrder
@@ -87,6 +91,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6444527836781072642, guid: 19fbcfbd817d2864cb104b7aa7669822, type: 3}
   m_PrefabInstance: {fileID: 8190341915373228808}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-5877781640983849884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2938175993273352714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fe7d51047395d46bef39ebd30aaf21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
 --- !u!114 &5896920107947144624
 MonoBehaviour:
   m_ObjectHideFlags: 0

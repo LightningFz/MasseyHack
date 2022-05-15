@@ -34,7 +34,10 @@ public class playerMovemnet : MonoBehaviour
     void Update()
     {
         getInput();
-        animator.SetFloat("horizontal", movement.x);
+        if (movement != Vector2.zero)
+        {
+            animator.SetFloat("horizontal", movement.x);
+        }
         animator.SetFloat("speed", movement.magnitude);
     }
     private void FixedUpdate()

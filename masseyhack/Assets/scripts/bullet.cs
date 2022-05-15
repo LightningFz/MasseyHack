@@ -15,7 +15,7 @@ public class bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag == "enemy")
+        if (hitInfo.tag == "enemy" || hitInfo.tag == "ground")
         {
             enemy enemy = hitInfo.GetComponent<enemy>();
             if (enemy != null)
